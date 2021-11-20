@@ -144,7 +144,7 @@ model.fit(train_padded, train_labels, epochs=20,batch_size=1024, validation_data
 evaluate_data=model.evaluate(train_padded, train_labels,verbose=0,batch_size=2048)
 print("Trian :",evaluate_data)
 evaluate_data=model.evaluate(val_padded, val_labels,batch_size=2048,verbose=0)
-print("Trian :",evaluate_data)
+print("Test :",evaluate_data)
 
 # save model
 model.save("fake_and_real_news_detector.h5")
